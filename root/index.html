@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | News homepage</title>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="headerArea">
+			<p class="headerLogo"><a href="/"><img src="images/logo.svg" alt=""></a></p>
+			<nav class="navArea">
+				<a href="javascript:void(0);" class="menuBtn spOnly"><img src="images/icon-menu.svg" alt=""></a>
+				<div class="menuBar">
+					<a href="javascript:void(0);" class="closeBtn spOnly"><img src="images/icon-menu-close.svg" alt=""></a>
+					<ul class="menuList">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">New</a></li>
+						<li><a href="#">Popular</a></li>
+						<li><a href="#">Trending</a></li>
+						<li><a href="#">Categories</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- end of headerArea -->
+		<main class="mainArea">
+			<div class="columnContent">
+				<div class="bannerArea">
+					<div class="mainVisual">
+						<img src="images/image-web-3-desktop.jpg" class="pcOnly" alt="">
+						<img src="images/image-web-3-mobile.jpg" class="spOnly" alt="">
+					</div>
+					<section class="bannerColumn">
+						<h2>The Bright Future of Web 3.0?</h2>
+						<div class="bannerContent">
+							<p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+							<a href="#" class="bannerBtn">Read more</a>
+						</div>
+					</section>
+				</div>
+				<!-- end of bannerArea -->
+				<section class="newsArea">
+					<h2>New</h2>
+					<ul class="newsList">
+						<li>
+							<a href="#">
+								<p class="newsTtl">Hydrogen VS Electric Cars</p>
+								<p class="newsDesc">Will hydrogen-fueled cars ever catch up to EVs?</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="newsTtl">The Downsides of AI Artistry</p>
+								<p class="newsDesc">What are the possible adverse effects of on-demand AI image generation?</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="newsTtl">Is VC Funding Drying Up?</p>
+								<p class="newsDesc">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<!-- end of newsArea -->
+			</div>
+			<ul class="articleList">
+				<li>
+					<a href="#" class="articleLink">
+						<div class="articleThumb">
+							<img src="images/image-retro-pcs.jpg" alt="">
+						</div>
+						<div class="articleDetails">
+							<p class="articleNum">01</p>
+							<p class="articleTtl">Reviving Retro PCs</p>
+							<p class="articleDesc">What happens when old PCs are given modern upgrades?</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="articleLink">
+						<div class="articleThumb">
+							<img src="images/image-top-laptops.jpg" alt="">
+						</div>
+						<div class="articleDetails">
+							<p class="articleNum">02</p>
+							<p class="articleTtl">Top 10 Laptops of 2022</p>
+							<p class="articleDesc">Our best picks for various needs and budgets.</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="articleLink">
+						<div class="articleThumb">
+							<img src="images/image-gaming-growth.jpg" alt="">
+						</div>
+						<div class="articleDetails">
+							<p class="articleNum">03</p>
+							<p class="articleTtl">The Growth of Gaming</p>
+							<p class="articleDesc">How the pandemic has sparked fresh opportunities.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<!-- end of articleList -->
+		</main>
+		<!-- end of mainArea -->
+	</div>
+	<!-- scripts -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

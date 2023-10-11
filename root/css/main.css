@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background-color: hsl(36, 100%, 99%);
+	font-size: 15px;
+	font-family: "Inter", sans-serif;
+}
+img {
+	width: 100%;
+	vertical-align: top;
+}
+.headerArea,
+.columnContent,
+.bannerColumn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+}
+.menuList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 12px;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	list-style-type: none;
+}
+.menuList li a {
+	color: hsl(236, 13%, 42%);
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.menuList li a:hover {
+	color: hsl(5, 85%, 63%);
+	-webkit-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+}
+.bannerColumn h2 {
+	font-weight: 800;
+}
+.bannerContent p {
+	line-height: 1.6;
+}
+.bannerBtn {
+	display: block;
+	background-color: hsl(5, 85%, 63%);
+	color: hsl(36, 100%, 99%);
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.bannerBtn:hover {
+	background-color: hsl(240, 100%, 5%);
+	-webkit-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+}
+.newsArea {
+	background-color: hsl(240, 100%, 5%);
+}
+.newsArea h2 {
+	color: hsl(35, 77%, 62%);
+	font-weight: 700;
+}
+.newsTtl {
+	color: hsl(36, 100%, 99%);
+	font-size: 18.2px;
+	font-weight: 700;
+	letter-spacing: 1.1px;
+}
+.newsDesc {
+	margin-top: 12px;
+	color: hsl(233, 8%, 79%);
+	line-height: 1.75;
+	letter-spacing: 0.02px;
+}
+.newsList li:not(:first-child) {
+	border-top: 1px solid hsl(233, 8%, 79%);
+}
+.newsList li:hover .newsTtl {
+	color: hsl(35, 77%, 62%);
+	-webkit-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+}
+.newsList li:hover {
+	cursor: pointer;
+}
+.articleList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+}
+.articleList .articleThumb {
+	display: block;
+	max-width: 100px;
+	-webkit-transition: -webkit-transform .6s;
+	transition: -webkit-transform .6s;
+	-o-transition: transform .6s;
+	transition: transform .6s;
+	transition: transform .6s, -webkit-transform .6s;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.articleList li a {
+	position: relative;
+	overflow: hidden;
+}
+.articleList li a:hover .articleThumb {
+	-webkit-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.articleLink {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-decoration: none;
+}
+.articleNum {
+	color: hsl(233, 8%, 79%);
+	font-size: 32px;
+	font-weight: 700;
+}
+.articleTtl {
+	color: hsl(240, 100%, 5%);
+	font-size: 16.9px;
+	font-weight: 800;
+	letter-spacing: 0.65px;
+}
+.articleDesc {
+	margin-top: 14px;
+	color: hsl(236, 13%, 42%);
+	line-height: 1.65;
+}
+.articleLink:hover .articleTtl {
+	color: hsl(5, 85%, 63%);
+	-webkit-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+	.wrap {
+		padding: 0 20px;
+	}
+}
+
+/* PC styles */
+@media print, screen and (min-width: 768px) {
+	.spOnly {
+		display: none;
+	}
+	body {
+		margin: 89px 0;
+	}
+	.wrap {
+		max-width: 1110px;
+		margin: 0 auto;
+	}
+	.menuList li:not(:last-child) {
+		margin-right: 38.3px;
+	}
+	.mainArea {
+		margin-top: 55px;
+	}
+	.bannerArea {
+		max-width: 730px;
+		margin-right: 30px;
+	}
+	.newsArea {
+		max-width: 350px;
+	}
+	.articleList li {
+		width: calc((100% - 60px) / 3);
+	}
+	.articleList .articleThumb {
+		margin-right: 24px;
+	}
+	.articleLink {
+		-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+				justify-content: space-between;
+	}
+	.bannerColumn {
+		margin-top: 31px;
+	}
+	.bannerColumn h2 {
+		margin-top: 4px;
+		font-size: 56px;
+	}
+	.bannerContent {
+		max-width: 350px;
+	}
+	.bannerBtn {
+		max-width: 234px;
+		width: 52.9%;
+		margin-top: 36px;
+		padding: 16.5px 8px;
+		letter-spacing: 3.8px;
+	}
+	.newsArea {
+		padding: 33.4px 24.4px 31px;
+	}
+	.newsArea h2 {
+		font-size: 40px;
+		letter-spacing: -0.2px;
+	}
+	.newsList {
+		margin-top: 34px;
+	}
+	.newsList li:not(:last-child) {
+		padding-bottom: 29px;
+	}
+	.newsList li:not(:first-child) {
+		padding-top: 32px;
+	}
+	.articleList {
+		margin-top: 72px;
+	}
+	.articleTtl {
+		margin-top: 15px;
+	}
+	.menuList {
+		max-width: 440px;
+	}
+	.menuList li a {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
+	}
+}
+@media screen and (min-width: 600px) {
+	.bannerColumn {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+				flex-direction: row;
+	}
+	.bannerColumn h2 {
+		padding-right: 20px;
+	}
+}
+
+/* SP styles */
+@media screen and (max-width: 767px) {
+	.pcOnly {
+		display: none;
+	}
+	body {
+		margin: 28px 0;
+	}
+	.wrap {
+		margin: 0 16px;
+	}
+	.mainArea {
+		margin-top: 32px;
+	}
+	.menuBar {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 999;
+		width: 68.4%;
+		height: 100%;
+		padding: 21px 20px 21px 25px;
+		background-color: hsl(36, 100%, 99%);
+		-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		-webkit-transition: right 0.5s;
+		-o-transition: right 0.5s;
+		transition: right 0.5s;
+	}
+	.menuBar.active {
+		right: 0;
+	}
+	.menuBar.active:after {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: hsla(0, 0%, 24%, 0.46);
+		content: "";
+		-webkit-backdrop-filter: blur(2px);
+				backdrop-filter: blur(2px);
+	}
+	.menuList {
+		margin-top: 90px;
+	}
+	.menuList li {
+		width: 100%;
+	}
+	.menuList li:not(:last-child) {
+		margin-bottom: 32px;
+	}
+	.menuList li a {
+		display: block;
+		letter-spacing: 1px;
+	}
+	.columnContent,
+	.articleList {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+	}
+	.columnContent {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+	}
+	.mainVisual img {
+		max-height: 18.8rem;
+		-o-object-fit: cover;
+		object-fit: cover;
+		-o-object-position: top;
+		object-position: top;
+	}
+	.articleList .articleThumb {
+		margin-right: 24px;
+	}
+	.articleList li:not(:first-child) {
+		margin-top: 34px;
+	}
+	.bannerColumn h2 {
+		margin-top: 25px;
+		font-size: 40px;
+	}
+	.headerLogo a img {
+		max-width: 46px;
+	}
+	.navArea a img {
+		width: auto;
+		margin-top: 6px;
+	}
+	.bannerContent {
+		margin-top: 15px;
+	}
+	.bannerContent p {
+		line-height: 1.71;
+	}
+	.bannerBtn {
+		width: 53.9%;
+		margin-top: 25px;
+		padding: 16.5px 18px;
+		font-size: 15px;
+		letter-spacing: 3.7px;
+	}
+	.newsArea {
+		margin-top: 64px;
+		padding: 25px 21px 24px;
+	}
+	.newsArea h2 {
+		font-size: 32px;
+	}
+	.newsList {
+		margin-top: 36px;
+	}
+	.newsList li:not(:last-child) {
+		padding-bottom: 28px;
+	}
+	.newsList li:not(:first-child) {
+		padding-top: 33px;
+	}
+	.articleList {
+		margin-top: 64px;
+	}
+	.articleTtl {
+		margin-top: 16px;
+	}
+	.closeBtn {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+			-ms-flex-pack: end;
+				justify-content: end;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.bannerColumn {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+	}
+}

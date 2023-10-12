@@ -322,8 +322,6 @@ img {
 		height: 100%;
 		background-color: hsla(0, 0%, 24%, 0.3);
 		content: "";
-		-webkit-backdrop-filter: blur(1px);
-				backdrop-filter: blur(1px);
 	}
 	.menuList {
 		margin-top: 90px;
